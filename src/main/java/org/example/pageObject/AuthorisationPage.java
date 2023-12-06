@@ -40,7 +40,8 @@ public class AuthorisationPage {
 
     //ОЖИДАНИЕ прогрузки данных
     public void waitForLoadDataAccount() {
-        new WebDriverWait(driver, 10).until(driver -> (driver.findElement(enterButton).getText() != null && !driver.findElement(enterButton).getText().isEmpty()));}
+        new WebDriverWait(driver, 10).until(driver -> (driver.findElement(enterButton).getText() 
+                            != null && !driver.findElement(enterButton).getText().isEmpty()));}
 
     // Клик на Восстановить пароль
     public void clickRecoverPassword() {
